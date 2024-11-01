@@ -1,0 +1,15 @@
+@use "../base/variables" as var;
+
+.skip-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: var.$primary-purple;
+  color: white;
+  z-index: 500;
+}
+
+.skip-content:focus {
+   top: 0;
+}
