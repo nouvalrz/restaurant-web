@@ -1,0 +1,78 @@
+@use "../abstracts/mixins" as mix;
+@use "../base/variables" as var;
+
+.header {
+  @include mix.gray-box-shadow;
+  @include mix.flex-row;
+  @include mix.padding-inline-container;
+
+  padding-block: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+
+  &__brand-logo {
+    @include mix.flex-row;
+    align-items: center;
+
+    img {
+      width: 3rem;
+    }
+
+    p {
+      font-family: "Playwrite GB S", cursive;
+      font-weight: 400;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    transform: translate(-4rem, -500px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.15);
+    background-color: var.$primary-white;
+    width: 100%;
+
+    @include mix.respond-to(medium) {
+      @include mix.flex-row;
+      position: static;
+      transform: translate(0, 0);
+      gap: 2rem;
+      width: auto;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    a {
+      @include mix.clickable-size;
+      @include mix.flex-column-center;
+    }
+
+    &.open {
+      transform: translate(-4rem, 100px);
+    }
+  }
+
+  &__drawer-button {
+    @include mix.respond-to(medium) {
+      display: none;
+    }
+    @include mix.clickable-size;
+    @include mix.gray-box-shadow;
+
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: var.$primary-white;
+
+    i {
+      color: var.$primary-purple;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

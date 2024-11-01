@@ -1,0 +1,11 @@
+@use "../base/variables" as var;
+
+.footer {
+  background-color: var.$primary-purple;
+  padding-block: 2rem;
+
+  p {
+    color: var.$primary-white;
+    text-align: center;
+  }
+}

@@ -1,0 +1,59 @@
+@use "../base/variables" as var;
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row-center {
+  @include flex-row();
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-center {
+  @include flex-column();
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin clickable-size {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@mixin gray-box-shadow {
+  box-shadow: 1px 1px 12px rgba(0,0,0,.15);
+}
+
+@mixin gray-text-shadow {
+  text-shadow: 1px 1px 12px rgba(0,0,0,.90);
+}
+
+@mixin padding-inline-container{
+  padding-inline: 4rem;
+}
+
+@mixin card {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid var.$outline-purple;
+  overflow: hidden;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: 480px) { @content; }
+  } @else if $breakpoint == medium {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == large {
+    @media (min-width: 992px) { @content; }
+  } @else if $breakpoint == xlarge {
+    @media (min-width: 1200px) { @content; }
+  }
+}

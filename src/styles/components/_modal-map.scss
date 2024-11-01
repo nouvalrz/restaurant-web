@@ -1,0 +1,65 @@
+@use "../abstracts/mixins" as mix;
+@use "../base/variables" as var;
+
+.modal-map__wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  &.open {
+    @include mix.flex-column-center;
+  }
+}
+
+.modal-map-card {
+  @include mix.gray-box-shadow;
+  width: 100%;
+  max-width: 50rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(500px);
+  transition: transform 0.5s, opacity 0.5s;
+
+  &.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &__header {
+    @include mix.flex-row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    button {
+      @include mix.clickable-size;
+      border: none;
+      outline: none;
+      background-color: transparent;
+
+      &:hover {
+        cursor: pointer;
+      }
+       
+      i {
+        color: var.$primary-purple;
+        font-size: 1.5rem;
+        
+      }
+    }
+  }
+
+  &__body {
+    iframe {
+      width: 100%;
+    }
+  }
+
+}

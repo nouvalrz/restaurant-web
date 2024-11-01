@@ -6,7 +6,8 @@
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/41",
       "city": "Medan",
-      "rating": 4.6
+      "rating": 4.6,
+      "map" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31856.29028422431!2d98.62599311560277!3d3.579136569276593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312f57e44aa361%3A0x32b6c159f9f58188!2sBring%20Me%20Coffee%2040A!5e0!3m2!1sid!2sid!4v1730383554757!5m2!1sid!2sid"
     },
     {
       "id": "ljx8i0qu2uckcowlqdz",
@@ -14,7 +15,8 @@
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/07",
       "city": "Bali",
-      "rating": 4.6
+      "rating": 4.6,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126166.14614790927!2d114.9364602972656!3d-8.814971900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24ff9434fa3d1%3A0x73306bab5b47f9b4!2sSingle%20Fin%20Bali!5e0!3m2!1sid!2sid!4v1730383691345!5m2!1sid!2sid"
     },
     {
       "id": "fe8bbxoazddkcowlqdz",
@@ -22,7 +24,8 @@
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/29",
       "city": "Ternate",
-      "rating": 4.8
+      "rating": 4.8,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31915.54674946097!2d127.33114136509793!3d0.7855368992359871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x329cb572acb2f4d3%3A0xa034a4cbd4af891e!2sMie%20Ayam%20Pangsit%20Dua%20Bersaudara!5e0!3m2!1sid!2sid!4v1730383739069!5m2!1sid!2sid"
     },
     {
       "id": "ik1zljmlf68kcowlqdz",
@@ -30,7 +33,8 @@
       "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/38",
       "city": "Malang",
-      "rating": 4.7
+      "rating": 4.7,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.049050208358!2d112.6130159006653!3d-7.945896123252858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629ccb5a42363%3A0x4261b7ad4eea6741!2sSekol%20Duck%20Since%201986!5e0!3m2!1sid!2sid!4v1730383784079!5m2!1sid!2sid"
     },
     {
       "id": "9jpuzkm6n6jkcowlqdz",
@@ -38,7 +42,8 @@
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/40",
       "city": "Bali",
-      "rating": 3.8
+      "rating": 3.8,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126206.92395534509!2d115.07056755379024!3d-8.694743145447356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd246dc681530fd%3A0x1a7b10140fcaa8cc!2sThe%20Caffeine%20Coffee%20Shop!5e0!3m2!1sid!2sid!4v1730383823402!5m2!1sid!2sid"
     },
     {
       "id": "cpl5jpsnuqkkcowlqdz",
@@ -46,7 +51,8 @@
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/08",
       "city": "Malang",
-      "rating": 4.6
+      "rating": 4.6,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31610.528887681347!2d112.6036527176963!3d-7.966246941739959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62823e22b1eb7%3A0xa3486abbbc9492d7!2sHarmoni%20Cafe%20%26%20Resto!5e0!3m2!1sid!2sid!4v1730383867525!5m2!1sid!2sid"
     },
     {
       "id": "iqtf9hmdzvbkcowlqdz",
@@ -54,7 +60,8 @@
       "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/32",
       "city": "Surabaya",
-      "rating": 3.6
+      "rating": 3.6,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27949.12226909679!2d112.7351292195314!3d-7.253467440217407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f90048be4597%3A0xbfb41925646e114a!2sSaya%20suka%20rorrrt!5e0!3m2!1sid!2sid!4v1730383909400!5m2!1sid!2sid"
     },
     {
       "id": "8i06gqcc2dpkcowlqdz",
@@ -62,7 +69,8 @@
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/45",
       "city": "Aceh",
-      "rating": 4
+      "rating": 4,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1016649.6590586469!2d94.198539178125!3d5.524257600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304047c304266d23%3A0xf0019a14b5cc5b03!2sRumah%20Makan%20Cut%20Bit!5e0!3m2!1sid!2sid!4v1730383971759!5m2!1sid!2sid"
     },
     {
       "id": "wf5o19xhxxkcowlqdz",
@@ -70,7 +78,8 @@
       "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/04",
       "city": "Malang",
-      "rating": 3.9
+      "rating": 3.9,
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.0201048987087!2d112.64234917517881!3d-7.996860292028877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6294299a84903%3A0x7f9103bb83e88140!2sFairy%20Bakery!5e0!3m2!1sid!2sid!4v1730384007145!5m2!1sid!2sid"
     }
   ]
 }
