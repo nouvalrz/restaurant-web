@@ -1,6 +1,6 @@
 import "regenerator-runtime"; /* for async await transpile */
 import "../styles/main.scss";
-import Home from "./pages/home";
+import Home from "./views/pages/home";
 
 const pages = {
   "/": Home,
