@@ -1,17 +1,17 @@
-import 'regenerator-runtime'; /* for async await transpile */
-import '../styles/main.scss';
-import Home from './pages/home';
+import "regenerator-runtime"; /* for async await transpile */
+import "../styles/main.scss";
+import Home from "./pages/home";
 
 const pages = {
-  "/": Home
-}
+  "/": Home,
+};
 
 const currentRoute = window.location.pathname;
 
 window.addEventListener("DOMContentLoaded", () => {
-  if(pages[currentRoute]){
+  if (pages[currentRoute]) {
     pages[currentRoute].init();
-  }else{
+  } else {
     window.location.href = "/";
   }
-})
+});

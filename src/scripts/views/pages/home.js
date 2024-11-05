@@ -1,25 +1,25 @@
-let restaurants = []
+let restaurants = [];
 let lastFocusedElement;
 
 const Home = {
   async init() {
-    await this._initData()
-    this._initHandler()
+    await this._initData();
+    this._initHandler();
   },
 
   async _initData() {
-    const response = await fetch("/data/DATA.json")
-    const parsedResponse = await response.json()
+    const response = await fetch("/data/DATA.json");
+    const parsedResponse = await response.json();
 
-    restaurants = parsedResponse.restaurants
+    restaurants = parsedResponse.restaurants;
 
-    this._buildRestaurantListUI(restaurants)
+    this._buildRestaurantListUI(restaurants);
   },
 
   _buildRestaurantListUI(restaurants) {
-    const restaurantList = document.querySelector(".restaurant-list__contents")
+    const restaurantList = document.querySelector(".restaurant-list__contents");
 
-    let ui = ""
+    let ui = "";
 
     restaurants.forEach((restaurant) => {
       ui += `
@@ -51,22 +51,24 @@ const Home = {
               </p>
             </div>
           </article>
-      `
-    })
+      `;
+    });
 
-    restaurantList.innerHTML = ui
+    restaurantList.innerHTML = ui;
   },
 
   _initHandler() {
-    this._drawerButtonHandler()
-    this._mainElementHandler()
-    this._navResizeHandler()
-    this._mapButtonHandler()
-    this._closeMapButtonHandler()
+    this._drawerButtonHandler();
+    this._mainElementHandler();
+    this._navResizeHandler();
+    this._mapButtonHandler();
+    this._closeMapButtonHandler();
   },
 
   _mapButtonHandler() {
-    const mapButtons = document.querySelectorAll(".restaurant-card__map-button");
+    const mapButtons = document.querySelectorAll(
+      ".restaurant-card__map-button"
+    );
 
     mapButtons.forEach((item, index) => {
       item.addEventListener("click", (event) => {
@@ -81,7 +83,6 @@ const Home = {
 
         lastFocusedElement = document.activeElement;
 
-
         setTimeout(() => {
           modalMapCard.classList.add("open");
           this._setTabindexOutsideModal(-1);
@@ -92,7 +93,9 @@ const Home = {
   },
 
   _closeMapButtonHandler() {
-    const closeButton = document.querySelector(".modal-map-card__header button");
+    const closeButton = document.querySelector(
+      ".modal-map-card__header button"
+    );
 
     closeButton.addEventListener("click", (event) => {
       event.stopPropagation();
@@ -104,7 +107,7 @@ const Home = {
 
       setTimeout(() => {
         modalMapWrapper.classList.remove("open");
-        this._setTabindexOutsideModal(0); 
+        this._setTabindexOutsideModal(0);
 
         if (lastFocusedElement) {
           lastFocusedElement.focus();
@@ -112,67 +115,66 @@ const Home = {
       }, 300);
     });
   },
-  _setTabindexOutsideModal(value) { 
+  _setTabindexOutsideModal(value) {
     const outsideElements = document.querySelectorAll("header, main, footer");
-    outsideElements.forEach(element => {
+    outsideElements.forEach((element) => {
       element.setAttribute("tabindex", value);
     });
   },
 
-
   _drawerButtonHandler() {
-    const drawerButton = document.querySelector(".header__drawer-button")
-    const headerNav = document.querySelector(".header__nav")
+    const drawerButton = document.querySelector(".header__drawer-button");
+    const headerNav = document.querySelector(".header__nav");
     drawerButton.addEventListener("click", (event) => {
-      event.stopPropagation()
-      headerNav.classList.toggle("open")
+      event.stopPropagation();
+      headerNav.classList.toggle("open");
 
-      this._toggleDrawerIcon()
-    })
+      this._toggleDrawerIcon();
+    });
   },
 
   _mainElementHandler() {
-    const headerNav = document.querySelector(".header__nav")
-    const mainElement = document.querySelector("main")
+    const headerNav = document.querySelector(".header__nav");
+    const mainElement = document.querySelector("main");
     mainElement.addEventListener("click", (event) => {
-      event.stopPropagation()
-      headerNav.classList.remove("open")
+      event.stopPropagation();
+      headerNav.classList.remove("open");
 
-      this._toggleDrawerIcon()
+      this._toggleDrawerIcon();
 
-      const modalMapCard = document.querySelector(".modal-map-card")
-      modalMapCard.classList.remove("open")
+      const modalMapCard = document.querySelector(".modal-map-card");
+      modalMapCard.classList.remove("open");
 
-      const modalMapWrapper = document.querySelector(".modal-map__wrapper")
+      const modalMapWrapper = document.querySelector(".modal-map__wrapper");
       setTimeout(() => {
-        modalMapWrapper.classList.remove("open")
-      }, 300)
-    })
+        modalMapWrapper.classList.remove("open");
+      }, 300);
+    });
   },
 
   _navResizeHandler() {
-    const headerNav = document.querySelector(".header__nav")
+    const headerNav = document.querySelector(".header__nav");
     window.addEventListener("resize", () => {
       if (window.innerWidth > 768) {
-        headerNav.classList.remove("open")
+        headerNav.classList.remove("open");
 
-        this._toggleDrawerIcon()
+        this._toggleDrawerIcon();
       }
-    })
+    });
   },
 
   _toggleDrawerIcon() {
-    const drawerButton = document.querySelector(".header__drawer-button")
-    const headerNav = document.querySelector(".header__nav")
-    const icon = drawerButton.querySelector("i")
+    const drawerButton = document.querySelector(".header__drawer-button");
+    const headerNav = document.querySelector(".header__nav");
+    const icon = drawerButton.querySelector("i");
     if (headerNav.classList.contains("open")) {
-      icon.className = ""
-      icon.classList.add("fa-solid", "fa-xmark")
+      icon.className = "";
+      icon.classList.add("fa-solid", "fa-xmark");
     } else {
-      icon.className = ""
-      icon.classList.add("fa-solid", "fa-bars")
+      icon.className = "";
+      icon.classList.add("fa-solid", "fa-bars");
     }
-  }
-}
+  },
+};
 
-export default Home
+export default Home;
