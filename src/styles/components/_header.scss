@@ -9,8 +9,12 @@
   padding-block: 0.8rem;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   z-index: 100;
+  background-color: var.$primary-white;
 
   &__brand-logo {
     @include mix.flex-row;

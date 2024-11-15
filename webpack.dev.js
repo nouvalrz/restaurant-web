@@ -1,14 +1,14 @@
-const { merge } = require('webpack-merge');
-const path = require('path');
-const common = require('./webpack.common');
+const { merge } = require("webpack-merge");
+const path = require("path");
+const common = require("./webpack.common");
 
 module.exports = merge(common, {
-  mode: 'development',
-  devtool: 'inline-source-map',
+  mode: "development",
+  devtool: "inline-source-map",
   devServer: {
-    allowedHosts: 'all',
-    port: 7003,
-    static: path.resolve(__dirname, 'dist'),
+    allowedHosts: "all",
+    port: 7006,
+    static: path.resolve(__dirname, "dist"),
     open: true,
     compress: true,
     client: {

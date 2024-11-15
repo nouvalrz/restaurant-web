@@ -5,7 +5,16 @@ import eslintConfigPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { languageOptions: { globals: globals.browser } },
+  {
+    ignores: [
+      "node_modules/",
+      "dist/",
+      "webpack.common.js",
+      "webpack.dev.js",
+      "webpack.prod.js",
+    ],
+    languageOptions: { globals: globals.browser },
+  },
   pluginJs.configs.recommended,
   daSyle,
   eslintConfigPrettier,
