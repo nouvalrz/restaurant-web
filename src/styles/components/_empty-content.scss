@@ -1,0 +1,18 @@
+@use '../abstracts/mixins' as mix;
+@use '../base/variables' as var;
+
+.empty-content {
+  @include mix.flex-column-center;
+  height: 100%;
+  min-height: 15rem;
+
+  div {
+    text-align: center;
+    color: var.$primary-purple;
+
+    i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -6,7 +6,7 @@ const createRestaurantCard = (restaurant) => `
     <img
       src="${createImageUrl(restaurant.pictureId)}"
       alt="${restaurant.name} Photo"
-      class="restaurant-card__image"
+      class="lazyload restaurant-card__image"
       tabindex="0"
     />
     <div class="restaurant-card__header">

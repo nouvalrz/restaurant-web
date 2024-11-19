@@ -1,22 +1,24 @@
-import "regenerator-runtime"; /* for async await transpile */
-import "../styles/main.scss";
-import App from "./views/app";
-import swRegister from "./utils/sw-register";
+import 'regenerator-runtime'; /* for async await transpile */
+import '../styles/main.scss';
+import App from './views/app';
+import swRegister from './utils/sw-register';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const app = new App({
-  navigationDrawer: document.querySelector(".header__nav"),
-  navigationDrawerButtton: document.querySelector(".header__drawer-button"),
+  navigationDrawer: document.querySelector('.header__nav'),
+  navigationDrawerButtton: document.querySelector('.header__drawer-button'),
   navigationDrawerButttonIcon: document.querySelector(
-    ".header__drawer-button i"
+    '.header__drawer-button i'
   ),
-  content: document.querySelector("main"),
+  content: document.querySelector('main'),
 });
 
-window.addEventListener("hashchange", () => {
+window.addEventListener('hashchange', () => {
   app.renderPage();
 });
 
-window.addEventListener("load", async () => {
+window.addEventListener('load', async () => {
   await swRegister();
   app.renderPage();
 });

@@ -1,0 +1,32 @@
+{
+  "id": "restaurant-apps-pwa-1",
+  "start_url": "./index.html",
+  "name": "Restaurant Apps Lite",
+  "short_name": "Restaurant Lite",
+  "description": "Explore many restaurant around you!",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#4845f5",
+  "icons": [
+    {
+      "src": "/images/restaurant-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/images/screenshot-mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

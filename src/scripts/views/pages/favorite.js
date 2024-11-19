@@ -1,6 +1,7 @@
-import FavoriteRestaurantIdb from "../../data/local/favorite-restaurant-idb";
-import { createFavoriteHero } from "../templates/favorite-hero";
-import { createRestaurantCard } from "../templates/restaurant-card";
+import FavoriteRestaurantIdb from '../../data/local/favorite-restaurant-idb';
+import { createEmptyContent } from '../templates/empty-content';
+import { createFavoriteHero } from '../templates/favorite-hero';
+import { createRestaurantCard } from '../templates/restaurant-card';
 class Favorite {
   static async render() {
     return `
@@ -14,8 +15,14 @@ class Favorite {
   static async afterRender() {
     const restaurants = await this.getAllRestaurants();
     const restaurantListContents = document.querySelector(
-      ".restaurant-list__contents"
+      '.restaurant-list__contents'
     );
+
+    if (restaurants.length === 0) {
+      this.renderEmptyFavorite();
+      return;
+    }
+
     restaurants.forEach((restaurant) => {
       restaurantListContents.innerHTML += createRestaurantCard(restaurant);
     });
@@ -24,6 +31,13 @@ class Favorite {
   static async getAllRestaurants() {
     const response = await FavoriteRestaurantIdb.getAllRestaurants();
     return response;
+  }
+
+  static renderEmptyFavorite() {
+    const restaurantList = document.querySelector('.restaurant-list');
+    restaurantList.innerHTML = createEmptyContent(
+      'There are no restaurants saved'
+    );
   }
 }
 
