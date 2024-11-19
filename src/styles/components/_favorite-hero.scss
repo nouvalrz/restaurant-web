@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as mix;
+@use "../base/variables" as var;
+
+.favorite-hero {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 254, 1) 100%
+  );
+  border-bottom: 2px solid var.$outline-purple;
+  text-align: center;
+  padding-inline: 1rem;
+  padding-block: 3rem;
+
+  h1 {
+    color: var.$primary-purple;
+  }
+}

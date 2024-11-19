@@ -1,17 +1,24 @@
-import "regenerator-runtime"; /* for async await transpile */
-import "../styles/main.scss";
-import Home from "./pages/home";
+import 'regenerator-runtime'; /* for async await transpile */
+import '../styles/main.scss';
+import App from './views/app';
+import swRegister from './utils/sw-register';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
-const pages = {
-  "/": Home,
-};
+const app = new App({
+  navigationDrawer: document.querySelector('.header__nav'),
+  navigationDrawerButtton: document.querySelector('.header__drawer-button'),
+  navigationDrawerButttonIcon: document.querySelector(
+    '.header__drawer-button i'
+  ),
+  content: document.querySelector('main'),
+});
 
-const currentRoute = window.location.pathname;
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
 
-window.addEventListener("DOMContentLoaded", () => {
-  if (pages[currentRoute]) {
-    pages[currentRoute].init();
-  } else {
-    window.location.href = "/";
-  }
+window.addEventListener('load', async () => {
+  await swRegister();
+  app.renderPage();
 });

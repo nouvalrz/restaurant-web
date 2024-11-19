@@ -1,5 +1,5 @@
-import ApiClient from "../../utils/api-client";
-import ApiEndpoint from "../../global/api-endpoint";
+import ApiClient from '../../utils/api-client';
+import ApiEndpoint from '../../global/api-endpoint';
 
 const RestaurantsApi = {
   async getAll() {
@@ -8,6 +8,14 @@ const RestaurantsApi = {
 
   async getDetail(id) {
     return await ApiClient.get(ApiEndpoint.GET_DETAIL(id));
+  },
+
+  async postReview({ id, name, description }) {
+    return await ApiClient.post(ApiEndpoint.POST_REVIEW, {
+      id: id,
+      name: name,
+      review: description,
+    });
   },
 };
 

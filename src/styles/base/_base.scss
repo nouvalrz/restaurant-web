@@ -1,4 +1,4 @@
-@use "variables" as var;
+@use 'variables' as var;
 *,
 *::before,
 *::after {
@@ -10,7 +10,7 @@
 html,
 body {
   height: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 img,
@@ -46,4 +46,15 @@ table {
 
 *:focus {
   outline: 2px solid var.$primary-purple !important;
+  border-radius: 4px;
+}
+
+main {
+  margin-top: 4.5rem;
+  flex: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }

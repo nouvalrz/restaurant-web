@@ -13,7 +13,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm install && npm run build
+
+      # Install dependencies
+      - run: npm install
+
+      # Run unit tests
+      - name: Run Unit Tests
+        run: npm run test
+
+      # Run E2E tests
+      - name: Run E2E Tests
+        run: npm run e2e
+
+      # Build the project
+      - name: Build Project
+        run: npm run build
+
+      # Build the project
+      - name: Build Image
+        run: npm run build-image
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}

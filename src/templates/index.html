@@ -1,9 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Apps</title>
+
+    <link rel="manifest" href="./app.webmanifest" />
+    <link rel="icon" href="/images/restaurant-logo.svg" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Get recommendations and explore many restaurants near you!"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,51 +28,24 @@
     />
   </head>
   <body>
+    <span tabindex="0" id="reset-focus"></span>
     <a href="#maincontent" class="skip-content">Skip to Main Content</a>
     <header class="header">
       <div class="header__brand-logo">
-        <img src="/images/restaurant-logo.svg" alt="Logo" />
+        <img src="/images/restaurant-logo.svg" alt="Logo" width="3rem" />
         <p>WhereTheFood</p>
       </div>
       <button tabindex="0" class="header__drawer-button">
         <i class="fa-solid fa-bars"></i>
       </button>
       <nav class="header__nav">
-        <a href="/">Home</a>
-        <a href="#">Favorite</a>
+        <a href="/#/">Home</a>
+        <a href="#/favorite">Favorite</a>
         <a href="https://nouvalrz.tech">About Us</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero__badge">
-          <h1 tabindex="0">WhereTheFood</h1>
-        </div>
-        <h2 tabindex="0" class="hero__title">Explore the Best Eats Around!</h2>
-      </section>
-
-      <section class="restaurant-list" id="maincontent">
-        <h2 tabindex="0" class="restaurant-list__title">Explore Restaurant</h2>
-        <div class="restaurant-list__contents">
-          
-        </div>
-      </section>
-
-      <section class="modal-map__wrapper" aria-hidden="true" tabindex="-1" id="modal">
-        <div class="modal-map-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-          <div class="modal-map-card__header">
-            <h3 tabindex="0">Lokasi Restaurant</h3>
-            <button tabindex="0" aria-label="Close location map">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-          <div class="modal-map-card__body">
-            <iframe id="map-frame" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="0"></iframe>
-          </div>
-        </div>
-      </section>
-    </main>
+    <main></main>
 
     <footer class="footer">
       <p tabindex="0">© 2024 Restaurant Apps</p>

@@ -18,7 +18,7 @@
 
 .restaurant-list__contents {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 1rem;
 }
 
@@ -40,20 +40,21 @@
     width: 100%;
     background-color: var.$light-purple;
 
-
-    button {
+    a {
       @include mix.clickable-size;
+      @include mix.flex-column-center;
       background-color: transparent;
       outline: none;
       border: none;
+      text-decoration: none;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
-      
+
       i {
         color: var.$primary-purple;
-
+        font-size: 2rem;
       }
     }
   }
