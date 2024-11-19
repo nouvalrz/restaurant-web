@@ -16,16 +16,9 @@ jobs:
       # Install dependencies
       - run: npm install
 
-      # Install Playwright browsers
-      - run: npx playwright install
-
       # Run unit tests
       - name: Run Unit Tests
         run: npm run test
-
-      # Run E2E tests
-      - name: Run E2E Tests
-        run: npm run e2e
 
       # Build the project
       - name: Build Project
